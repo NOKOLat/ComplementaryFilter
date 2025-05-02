@@ -22,14 +22,14 @@ float gyro[3];
 割り込み等を使用する場合は、割り込み処理でSetData()のみを実行し、計算とデータ取得は割り込み外で行うことをおすすめします
 ```cpp
 
-#include "ComplementaryFilter.h"
+#include "ComplementaryFilter.h"）
 //include Sensorlibrary
 
 float accel[3] = {};
 float gyro[3] = {};
 float angle[3] = {};
-float gain = 0.98;
-float time = 0.0001;
+float gain = 0.98; //角速度の重みの値(0.8~0.98程度を推奨）
+float time = 0.0001;　//データの取得間隔
 
 ComplementaryFilter filter(gain, time);
 
