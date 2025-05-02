@@ -22,7 +22,7 @@ float gyro[3];
 割り込み等を使用する場合は、割り込み処理でSetData()のみを実行し、計算とデータ取得は割り込み外で行うことをおすすめします
 ```cpp
 
-#include "ComplementaryFilter.h"）
+#include "ComplementaryFilter.h"
 //include Sensorlibrary
 
 float accel[3] = {};
