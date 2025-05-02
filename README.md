@@ -1,0 +1,2 @@
+# ComplementaryFilter
+6軸IMUのデータを相補フィルターを用いて角度に変換するコードです
